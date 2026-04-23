@@ -24,6 +24,9 @@ jobs:
           java-version: 17
           distribution: temurin
 
+      - name: mvnw 실행 권한 부여
+        run: chmod +x backend/mvnw
+
       # Maven으로 빌드 및 테스트 실행
       - name: Maven 빌드 & 테스트
         run: |
